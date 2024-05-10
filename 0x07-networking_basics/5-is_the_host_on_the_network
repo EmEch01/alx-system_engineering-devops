@@ -7,11 +7,11 @@
 # Check if an argument is provided
 if [ $# -eq 0 ]; then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-	exit 1
+	exit
 elif [ $# -gt 1 ]; then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 	exit
 else
-
 # Ping the IP address 5 times
-	ping -c 5 $1
+	ping "$1" -c 5
+fi
