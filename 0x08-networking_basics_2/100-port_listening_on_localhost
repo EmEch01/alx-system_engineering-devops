@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This iscript listens on port 98 on localhost and echoes back any input received
+
+nc -| 98
